@@ -1,0 +1,25 @@
+body
+{
+    padding: 5% 10%;
+}
+
+.formulario
+{
+    width: 100%;
+    text-align: center;
+}
+
+#calendario
+{
+    width: 205px;
+}
+
+.horarios
+{
+    width: 205px;
+}
+
+.vacinas
+{
+    width: 205px;
+}
