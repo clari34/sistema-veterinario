@@ -1,29 +1,35 @@
 <?php
 
-class Rota {
+class Rota
+{
 
-    private $controler ='Pags';
+    private $controlador = 'Pags';
+    private $metodo = 'index';
 
     public function __construct()
     {
-        $url = $this->url();
-        
-        if(file_exists('../app/Controllers/'.ucwords($url[0]).'.php')){
-            $this->controler = ucwords($url[0]);
+        $url = $this->url() ? $this->url() : [0];
+
+        if (file_exists('../app/Controllers/' . ucwords($url[0]) . '.php')) {
+            $this->controlador = ucwords($url[0]);
             unset($url[0]);
         }
+        $this->controlador = new $this->controlador;
 
-        require_once'../app/Controllers/'.$this->controler.'.php';
-        $this->controler = new $this->controler;
-
-        var_dump($this);
+        if (isset($url[1])) :
+            if (method_exists($this->controlador, $url[1])) :
+                $this->metodo = $url[1];
+                unset($url[1]);
+            endif;
+        endif;
     }
 
-    private function url(){
-        $url = filter_input(INPUT_GET,'url',FILTER_SANITIZE_URL);
-        if(isset($url)){
-            $url = trim(rtrim($url,'/'));
-            $url = explode('/',$url);
+    private function url()
+    {
+        $url = filter_input(INPUT_GET, 'url', FILTER_SANITIZE_URL);
+        if (isset($url)) {
+            $url = trim(rtrim($url, '/'));
+            $url = explode('/', $url);
             return $url;
         }
     }

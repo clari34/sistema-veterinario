@@ -1,4 +1,9 @@
 <?php
-class Pags{
+class Pags
+{
 
+    public function infos()
+    {
+    
+    }
 }
