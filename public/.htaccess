@@ -1,0 +1,8 @@
+<ifModule mod_rewrite.c>
+    Options -Multiviews
+    RewriteEngine on 
+    RewriteBase /veterinario/public
+    RewriteCond %{REQUEST_FILENAME} !^f
+    RewriteCond %{REQUEST_FILENAME} !^d
+    RewriteRule ^(.+)$ index.php?pag=$1 [QSA,L]
+</ifModule>
