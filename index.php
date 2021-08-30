@@ -9,7 +9,7 @@
         $controller = $_GET["class"] . "Controller";
         $action = $_GET["action"];
       
-        require_once "src/app/controllers/" . $controller . ".php";
+        require_once "app/Controllers/" . $controller . ".php";
       
         $controller = new $controller();
         $controller->$action();
