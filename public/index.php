@@ -1,6 +1,5 @@
 <?php
 include './../app/autoload2.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +14,7 @@ include './../app/autoload2.php';
 
 <body>
     <?php
-    $rotas = new Rota();
+      $rotas = new Rota();
     ?>
 
 </body>

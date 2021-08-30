@@ -1,5 +1,5 @@
 <?php
-
+include './../app/autoload2.php';
 class Rota
 {
 
@@ -14,6 +14,7 @@ class Rota
             $this->controlador = ucwords($url[0]);
             unset($url[0]);
         }
+        $controlador = new Pags;
         $this->controlador = new $this->controlador;
 
         if (isset($url[1])) :
@@ -22,6 +23,7 @@ class Rota
                 unset($url[1]);
             endif;
         endif;
+        var_dump($this);
     }
 
     private function url()
