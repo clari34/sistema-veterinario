@@ -7,7 +7,7 @@
 
         <meta charset="utf-8">
         <title>Agendar vacinação</title>
-        <link rel="stylesheet" href="../public/Formatacao/estilo.css">
+        <link rel="stylesheet" href="../Estilo/estilo2.css">
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
         <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
         <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
@@ -20,7 +20,7 @@
 
             <h1>Agendar vacinação</h1>
 
-            <div>
+            <div >
                 <label for="data">Escolha uma data</label>
                 <br>
                 <input name="data" type="text" id="calendario"/>

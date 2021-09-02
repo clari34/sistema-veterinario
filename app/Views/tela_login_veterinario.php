@@ -7,7 +7,7 @@
 
         <meta charset="utf-8">
         <title>Login Veterinário</title>
-        <link rel="stylesheet" href="../public/Formatacao/estilo.css">
+        <link rel="stylesheet" href="../Estilo/estilo2.css">
 
     </head>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro Veterinário</title>
-    <link rel="stylesheet" href="../public/Formatacao/estilo.css" />
+    <link rel="stylesheet" href="../Estilo/estilo2.css" />
   </head>
   
   <h1>Bem-vindo ao Health & Paws</h1>
